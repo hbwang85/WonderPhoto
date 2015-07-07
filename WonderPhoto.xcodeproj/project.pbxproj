@@ -10,11 +10,12 @@
 		A226615BBFDB27022FFA289D /* libPods-WonderPhoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E02F6D42ED500C01B6608A /* libPods-WonderPhoto.a */; };
 		A300AF631B4BABC10071F5A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A300AF621B4BABC10071F5A3 /* main.m */; };
 		A300AF661B4BABC10071F5A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A300AF651B4BABC10071F5A3 /* AppDelegate.m */; };
-		A300AF691B4BABC10071F5A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A300AF681B4BABC10071F5A3 /* ViewController.m */; };
 		A300AF6C1B4BABC10071F5A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A300AF6A1B4BABC10071F5A3 /* Main.storyboard */; };
 		A300AF6E1B4BABC10071F5A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A300AF6D1B4BABC10071F5A3 /* Images.xcassets */; };
 		A300AF711B4BABC10071F5A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A300AF6F1B4BABC10071F5A3 /* LaunchScreen.xib */; };
 		A300AF7D1B4BABC10071F5A3 /* WonderPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A300AF7C1B4BABC10071F5A3 /* WonderPhotoTests.m */; };
+		B714907ACE597938191D7746 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B714903F74527112A8EA7A3E /* LoginViewModel.m */; };
+		B7149C9521CB5B8B7BAB0B88 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149895242F2A9EFD69C247 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +36,16 @@
 		A300AF621B4BABC10071F5A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A300AF641B4BABC10071F5A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A300AF651B4BABC10071F5A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A300AF671B4BABC10071F5A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A300AF681B4BABC10071F5A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A300AF6B1B4BABC10071F5A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A300AF6D1B4BABC10071F5A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A300AF701B4BABC10071F5A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A300AF761B4BABC10071F5A3 /* WonderPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A300AF7B1B4BABC10071F5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A300AF7C1B4BABC10071F5A3 /* WonderPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WonderPhotoTests.m; sourceTree = "<group>"; };
+		B714903F74527112A8EA7A3E /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		B7149895242F2A9EFD69C247 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B7149988679815AC6958F243 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B7149C613DA613FE78A81554 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		F47A60A53EBC774B8B2FFCCE /* Pods-WonderPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonderPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WonderPhoto/Pods-WonderPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,12 +101,12 @@
 			children = (
 				A300AF641B4BABC10071F5A3 /* AppDelegate.h */,
 				A300AF651B4BABC10071F5A3 /* AppDelegate.m */,
-				A300AF671B4BABC10071F5A3 /* ViewController.h */,
-				A300AF681B4BABC10071F5A3 /* ViewController.m */,
 				A300AF6A1B4BABC10071F5A3 /* Main.storyboard */,
 				A300AF6D1B4BABC10071F5A3 /* Images.xcassets */,
 				A300AF6F1B4BABC10071F5A3 /* LaunchScreen.xib */,
 				A300AF601B4BABC10071F5A3 /* Supporting Files */,
+				B7149B984012D84A1CC6A0AE /* View */,
+				B7149388BF07D8182C4C45DB /* ViewModel */,
 			);
 			path = WonderPhoto;
 			sourceTree = "<group>";
@@ -132,6 +135,24 @@
 				A300AF7B1B4BABC10071F5A3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7149388BF07D8182C4C45DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B714903F74527112A8EA7A3E /* LoginViewModel.m */,
+				B7149C613DA613FE78A81554 /* LoginViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7149B984012D84A1CC6A0AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7149988679815AC6958F243 /* LoginViewController.h */,
+				B7149895242F2A9EFD69C247 /* LoginViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FAF94C8372C185277BFBD952 /* Pods */ = {
@@ -278,9 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A300AF691B4BABC10071F5A3 /* ViewController.m in Sources */,
 				A300AF661B4BABC10071F5A3 /* AppDelegate.m in Sources */,
 				A300AF631B4BABC10071F5A3 /* main.m in Sources */,
+				B7149C9521CB5B8B7BAB0B88 /* LoginViewController.m in Sources */,
+				B714907ACE597938191D7746 /* LoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WonderPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -419,8 +443,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WonderPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};
