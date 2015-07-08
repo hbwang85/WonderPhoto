@@ -13,7 +13,6 @@
 #import "UITextField+RACSignalSupport.h"
 #import "LoginViewModel.h"
 #import "RACCommand.h"
-#import "RACStream.h"
 #import "UIButton+RACCommandSupport.h"
 #import "RACSignal+Operations.h"
 #import "UIControl+RACSignalSupport.h"
@@ -32,7 +31,6 @@
 
     self.loginButton.rac_command = self.viewModel.loginCommand;
 
-    __weak typeof(self) weakSelf = self;
     RAC(self.loginButton, enabled) = [RACSignal combineLatest:@[self.nameField.rac_textSignal, self.passwdField.rac_textSignal] reduce:^(NSString *username, NSString *passwd) {
         return @(username.length>0 && passwd.length>0);
     }];
