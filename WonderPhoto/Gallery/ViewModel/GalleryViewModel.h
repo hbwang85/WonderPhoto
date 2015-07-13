@@ -9,4 +9,8 @@
 
 @interface GalleryViewModel : RVMViewModel
 
+@property(nonatomic, strong, readonly) NSArray *models;
+
+- (instancetype)init;
+
 @end

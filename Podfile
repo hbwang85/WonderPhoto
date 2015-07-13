@@ -5,6 +5,10 @@ target 'WonderPhoto' do
   pod 'ReactiveCocoa'
   pod 'ReactiveViewModel'
   pod '500px-iOS-api'
+  pod 'AFImageDownloader'
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+
 end
 
 target 'WonderPhotoTests' do

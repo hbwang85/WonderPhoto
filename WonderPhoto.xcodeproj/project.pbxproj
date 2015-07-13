@@ -14,10 +14,15 @@
 		A300AF6E1B4BABC10071F5A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A300AF6D1B4BABC10071F5A3 /* Images.xcassets */; };
 		A300AF711B4BABC10071F5A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A300AF6F1B4BABC10071F5A3 /* LaunchScreen.xib */; };
 		A300AF7D1B4BABC10071F5A3 /* WonderPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A300AF7C1B4BABC10071F5A3 /* WonderPhotoTests.m */; };
-		B7149029B1A2B82E6236621E /* GalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149AB42BB1CB126857EF41 /* GalleryViewModel.m */; };
-		B714907ACE597938191D7746 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B714903F74527112A8EA7A3E /* LoginViewModel.m */; };
-		B71495451D0E0C97804176EE /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149DAECB7501181751D7E6 /* GalleryViewController.m */; };
-		B7149C9521CB5B8B7BAB0B88 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149895242F2A9EFD69C247 /* LoginViewController.m */; };
+		B714901DA0292501113FB768 /* GalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149DAE1C9E69DD7CBF6F09 /* GalleryCell.m */; };
+		B714921E4A23AC37D62824B2 /* GalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B714937BEBCB8A753995FDE3 /* GalleryFlowLayout.m */; };
+		B7149379FEAE40A677744B8F /* PhotoImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B71496579C9F63C686548150 /* PhotoImporter.m */; };
+		B71497D682B118EBDB3AF5AB /* HTPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B714971A8E191FF148A7DE6F /* HTPhotoModel.m */; };
+		B7149804A0DBC221D4BAF1E8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149AB0DA88C586CE4F8E53 /* LoginViewController.m */; };
+		B71498AADBB64FE6E7DA33AD /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B714932D783F5C1591F1D126 /* GalleryViewController.m */; };
+		B71498C6028EDE145FF391F9 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7149F9130AB15201F2DB243 /* default.jpg */; };
+		B7149D7FD01DBD31C95019EB /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149FD5A2A2B4B0BD1CBEB0 /* LoginViewModel.m */; };
+		B7149E57FB37412E47BF7761 /* GalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149D4C98C889AE05356CBE /* GalleryViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +49,23 @@
 		A300AF761B4BABC10071F5A3 /* WonderPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A300AF7B1B4BABC10071F5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A300AF7C1B4BABC10071F5A3 /* WonderPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WonderPhotoTests.m; sourceTree = "<group>"; };
-		B714903F74527112A8EA7A3E /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
-		B714973E103E031D1263E2C3 /* GalleryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewModel.h; sourceTree = "<group>"; };
-		B7149895242F2A9EFD69C247 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		B7149988679815AC6958F243 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		B7149AB42BB1CB126857EF41 /* GalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewModel.m; sourceTree = "<group>"; };
-		B7149AF8F00C67D2E57E737F /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
-		B7149C613DA613FE78A81554 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
-		B7149DAECB7501181751D7E6 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		B714922A2FF007773584545E /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		B71493180307E5DCEA4408AA /* GalleryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewModel.h; sourceTree = "<group>"; };
+		B714932D783F5C1591F1D126 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		B714937BEBCB8A753995FDE3 /* GalleryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryFlowLayout.m; sourceTree = "<group>"; };
+		B71493B59ED1B830F42330CD /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		B71496579C9F63C686548150 /* PhotoImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImporter.m; sourceTree = "<group>"; };
+		B714971A8E191FF148A7DE6F /* HTPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoModel.m; sourceTree = "<group>"; };
+		B714977E0B6F64E8B3E5FF69 /* GalleryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCell.h; sourceTree = "<group>"; };
+		B7149AB0DA88C586CE4F8E53 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B7149AE5E5B9479B715129F5 /* HTPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPhotoModel.h; sourceTree = "<group>"; };
+		B7149D45A970ED6A6AD057A5 /* PhotoImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImporter.h; sourceTree = "<group>"; };
+		B7149D4C98C889AE05356CBE /* GalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewModel.m; sourceTree = "<group>"; };
+		B7149DAE1C9E69DD7CBF6F09 /* GalleryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCell.m; sourceTree = "<group>"; };
+		B7149F8F6153469998CE0F91 /* GalleryFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryFlowLayout.h; sourceTree = "<group>"; };
+		B7149F9130AB15201F2DB243 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		B7149FB45D198A96F4C1B856 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B7149FD5A2A2B4B0BD1CBEB0 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		F47A60A53EBC774B8B2FFCCE /* Pods-WonderPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WonderPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WonderPhoto/Pods-WonderPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +125,10 @@
 				A300AF6D1B4BABC10071F5A3 /* Images.xcassets */,
 				A300AF6F1B4BABC10071F5A3 /* LaunchScreen.xib */,
 				A300AF601B4BABC10071F5A3 /* Supporting Files */,
-				B7149B984012D84A1CC6A0AE /* View */,
-				B7149388BF07D8182C4C45DB /* ViewModel */,
+				B71493DEEDE7EDA13E03F14A /* Login */,
+				B7149F78601B913840FCA439 /* Gallery */,
+				B71496579C9F63C686548150 /* PhotoImporter.m */,
+				B7149D45A970ED6A6AD057A5 /* PhotoImporter.h */,
 			);
 			path = WonderPhoto;
 			sourceTree = "<group>";
@@ -122,6 +138,7 @@
 			children = (
 				A300AF611B4BABC10071F5A3 /* Info.plist */,
 				A300AF621B4BABC10071F5A3 /* main.m */,
+				B7149F9130AB15201F2DB243 /* default.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,26 +160,72 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B7149388BF07D8182C4C45DB /* ViewModel */ = {
+		B71490347BDAA833C26F11E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B714903F74527112A8EA7A3E /* LoginViewModel.m */,
-				B7149C613DA613FE78A81554 /* LoginViewModel.h */,
-				B7149AB42BB1CB126857EF41 /* GalleryViewModel.m */,
-				B714973E103E031D1263E2C3 /* GalleryViewModel.h */,
+				B7149FB45D198A96F4C1B856 /* LoginViewController.h */,
+				B7149AB0DA88C586CE4F8E53 /* LoginViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B71490DBE5EE6FBCBBD249EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B714932D783F5C1591F1D126 /* GalleryViewController.m */,
+				B714922A2FF007773584545E /* GalleryViewController.h */,
+				B7149DAE1C9E69DD7CBF6F09 /* GalleryCell.m */,
+				B714977E0B6F64E8B3E5FF69 /* GalleryCell.h */,
+				B714937BEBCB8A753995FDE3 /* GalleryFlowLayout.m */,
+				B7149F8F6153469998CE0F91 /* GalleryFlowLayout.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B71492D0EE88A649F544F6E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B71493B59ED1B830F42330CD /* LoginViewModel.h */,
+				B7149FD5A2A2B4B0BD1CBEB0 /* LoginViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		B7149B984012D84A1CC6A0AE /* View */ = {
+		B7149389C0C00F65604AAF85 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B7149988679815AC6958F243 /* LoginViewController.h */,
-				B7149895242F2A9EFD69C247 /* LoginViewController.m */,
-				B7149DAECB7501181751D7E6 /* GalleryViewController.m */,
-				B7149AF8F00C67D2E57E737F /* GalleryViewController.h */,
+				B7149D4C98C889AE05356CBE /* GalleryViewModel.m */,
+				B71493180307E5DCEA4408AA /* GalleryViewModel.h */,
 			);
-			path = View;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B71493DEEDE7EDA13E03F14A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B71490347BDAA833C26F11E4 /* View */,
+				B71492D0EE88A649F544F6E6 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B714996538E289149A161E93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7149AE5E5B9479B715129F5 /* HTPhotoModel.h */,
+				B714971A8E191FF148A7DE6F /* HTPhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7149F78601B913840FCA439 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				B71490DBE5EE6FBCBBD249EC /* View */,
+				B7149389C0C00F65604AAF85 /* ViewModel */,
+				B714996538E289149A161E93 /* Model */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 		FAF94C8372C185277BFBD952 /* Pods */ = {
@@ -259,6 +322,7 @@
 				A300AF6C1B4BABC10071F5A3 /* Main.storyboard in Resources */,
 				A300AF711B4BABC10071F5A3 /* LaunchScreen.xib in Resources */,
 				A300AF6E1B4BABC10071F5A3 /* Images.xcassets in Resources */,
+				B71498C6028EDE145FF391F9 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,10 +375,14 @@
 			files = (
 				A300AF661B4BABC10071F5A3 /* AppDelegate.m in Sources */,
 				A300AF631B4BABC10071F5A3 /* main.m in Sources */,
-				B7149C9521CB5B8B7BAB0B88 /* LoginViewController.m in Sources */,
-				B714907ACE597938191D7746 /* LoginViewModel.m in Sources */,
-				B71495451D0E0C97804176EE /* GalleryViewController.m in Sources */,
-				B7149029B1A2B82E6236621E /* GalleryViewModel.m in Sources */,
+				B7149804A0DBC221D4BAF1E8 /* LoginViewController.m in Sources */,
+				B7149D7FD01DBD31C95019EB /* LoginViewModel.m in Sources */,
+				B71498AADBB64FE6E7DA33AD /* GalleryViewController.m in Sources */,
+				B714901DA0292501113FB768 /* GalleryCell.m in Sources */,
+				B714921E4A23AC37D62824B2 /* GalleryFlowLayout.m in Sources */,
+				B7149E57FB37412E47BF7761 /* GalleryViewModel.m in Sources */,
+				B7149379FEAE40A677744B8F /* PhotoImporter.m in Sources */,
+				B71497D682B118EBDB3AF5AB /* HTPhotoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

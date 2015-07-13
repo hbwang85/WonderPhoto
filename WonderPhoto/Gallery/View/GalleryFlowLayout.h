@@ -3,10 +3,9 @@
 // Copyright (c) 2015 Haibin Wang. All rights reserved.
 //
 
-#import "GalleryViewModel.h"
+#import "UIKit/UIKit.h"
 
 
-@implementation GalleryViewModel {
+@interface GalleryFlowLayout : UICollectionViewFlowLayout
 
-}
 @end

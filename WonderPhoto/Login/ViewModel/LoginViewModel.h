@@ -12,6 +12,6 @@
 
 @property(nonatomic, copy) NSString *userName;
 @property(nonatomic, copy) NSString *passwd;
-@property(readonly, strong) RACCommand *loginCommand ;
+@property(readonly, strong) RACCommand *loginCommand;
 
 @end

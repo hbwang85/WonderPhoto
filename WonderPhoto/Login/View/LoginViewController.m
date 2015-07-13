@@ -14,9 +14,6 @@
 #import "LoginViewModel.h"
 #import "RACCommand.h"
 #import "UIButton+RACCommandSupport.h"
-#import "RACSignal+Operations.h"
-#import "UIControl+RACSignalSupport.h"
-#import "GalleryViewController.h"
 
 @interface LoginViewController ()
 
@@ -46,18 +43,6 @@
 //
 //        [self performSegueWithIdentifier:@"showGalleryViewControllerIdentifier" sender:nil];
 //    }];
-
-}
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-//    if ([segue.identifier isEqualToString:@"showGalleryViewControllerIdentifier"]) {
-//        GalleryViewController *viewController = (GalleryViewController *)segue.destinationViewController;
-//    }
 
 }
 
