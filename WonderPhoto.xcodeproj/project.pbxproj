@@ -17,12 +17,15 @@
 		B714901DA0292501113FB768 /* GalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149DAE1C9E69DD7CBF6F09 /* GalleryCell.m */; };
 		B714921E4A23AC37D62824B2 /* GalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B714937BEBCB8A753995FDE3 /* GalleryFlowLayout.m */; };
 		B7149379FEAE40A677744B8F /* PhotoImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B71496579C9F63C686548150 /* PhotoImporter.m */; };
+		B71494C87983714259859419 /* HTPhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B71495B78E45A94209D9F1F7 /* HTPhotoViewModel.m */; };
 		B71497D682B118EBDB3AF5AB /* HTPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B714971A8E191FF148A7DE6F /* HTPhotoModel.m */; };
 		B7149804A0DBC221D4BAF1E8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149AB0DA88C586CE4F8E53 /* LoginViewController.m */; };
 		B71498AADBB64FE6E7DA33AD /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B714932D783F5C1591F1D126 /* GalleryViewController.m */; };
 		B71498C6028EDE145FF391F9 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7149F9130AB15201F2DB243 /* default.jpg */; };
+		B7149CED9EB3B1356B9F4702 /* HTPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149A564C2CCA49C07529FB /* HTPhotoAlbumViewController.m */; };
 		B7149D7FD01DBD31C95019EB /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149FD5A2A2B4B0BD1CBEB0 /* LoginViewModel.m */; };
 		B7149E57FB37412E47BF7761 /* GalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149D4C98C889AE05356CBE /* GalleryViewModel.m */; };
+		B7149F65AD420C143EA3B76C /* HTPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B71495E6A9D55F3E0410F981 /* HTPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,17 @@
 		B714932D783F5C1591F1D126 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		B714937BEBCB8A753995FDE3 /* GalleryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryFlowLayout.m; sourceTree = "<group>"; };
 		B71493B59ED1B830F42330CD /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		B71495B78E45A94209D9F1F7 /* HTPhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoViewModel.m; sourceTree = "<group>"; };
+		B71495E6A9D55F3E0410F981 /* HTPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoViewController.m; sourceTree = "<group>"; };
 		B71496579C9F63C686548150 /* PhotoImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImporter.m; sourceTree = "<group>"; };
 		B714971A8E191FF148A7DE6F /* HTPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoModel.m; sourceTree = "<group>"; };
 		B714977E0B6F64E8B3E5FF69 /* GalleryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCell.h; sourceTree = "<group>"; };
+		B71498418C68CEE236EC920B /* HTPhotoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPhotoViewModel.h; sourceTree = "<group>"; };
+		B714984DD03F181A9F514D2A /* HTPhotoAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPhotoAlbumViewController.h; sourceTree = "<group>"; };
+		B7149A564C2CCA49C07529FB /* HTPhotoAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoAlbumViewController.m; sourceTree = "<group>"; };
 		B7149AB0DA88C586CE4F8E53 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B7149AE5E5B9479B715129F5 /* HTPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPhotoModel.h; sourceTree = "<group>"; };
+		B7149BD3B5BBAC2DEFE8CE94 /* HTPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPhotoViewController.h; sourceTree = "<group>"; };
 		B7149D45A970ED6A6AD057A5 /* PhotoImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImporter.h; sourceTree = "<group>"; };
 		B7149D4C98C889AE05356CBE /* GalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewModel.m; sourceTree = "<group>"; };
 		B7149DAE1C9E69DD7CBF6F09 /* GalleryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCell.m; sourceTree = "<group>"; };
@@ -178,6 +187,10 @@
 				B714977E0B6F64E8B3E5FF69 /* GalleryCell.h */,
 				B714937BEBCB8A753995FDE3 /* GalleryFlowLayout.m */,
 				B7149F8F6153469998CE0F91 /* GalleryFlowLayout.h */,
+				B7149A564C2CCA49C07529FB /* HTPhotoAlbumViewController.m */,
+				B714984DD03F181A9F514D2A /* HTPhotoAlbumViewController.h */,
+				B71495E6A9D55F3E0410F981 /* HTPhotoViewController.m */,
+				B7149BD3B5BBAC2DEFE8CE94 /* HTPhotoViewController.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +209,8 @@
 			children = (
 				B7149D4C98C889AE05356CBE /* GalleryViewModel.m */,
 				B71493180307E5DCEA4408AA /* GalleryViewModel.h */,
+				B71495B78E45A94209D9F1F7 /* HTPhotoViewModel.m */,
+				B71498418C68CEE236EC920B /* HTPhotoViewModel.h */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -383,6 +398,9 @@
 				B7149E57FB37412E47BF7761 /* GalleryViewModel.m in Sources */,
 				B7149379FEAE40A677744B8F /* PhotoImporter.m in Sources */,
 				B71497D682B118EBDB3AF5AB /* HTPhotoModel.m in Sources */,
+				B71494C87983714259859419 /* HTPhotoViewModel.m in Sources */,
+				B7149CED9EB3B1356B9F4702 /* HTPhotoAlbumViewController.m in Sources */,
+				B7149F65AD420C143EA3B76C /* HTPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -198,5 +198,38 @@
             </objects>
             <point key="canvasLocation" x="806" y="529"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="YuK-Nk-TOL">
+            <objects>
+                <viewController id="a9W-XB-aFp" customClass="HTPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SV3-rf-hFE"/>
+                        <viewControllerLayoutGuide type="bottom" id="kHc-2k-ynK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oaU-jI-FDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-N5-III">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tl4-N5-III" firstAttribute="leading" secondItem="oaU-jI-FDQ" secondAttribute="leading" id="3VF-D9-OpV"/>
+                            <constraint firstItem="kHc-2k-ynK" firstAttribute="top" secondItem="tl4-N5-III" secondAttribute="bottom" id="B5k-0d-HVu"/>
+                            <constraint firstAttribute="trailing" secondItem="tl4-N5-III" secondAttribute="trailing" id="R3M-qP-Sda"/>
+                            <constraint firstItem="tl4-N5-III" firstAttribute="top" secondItem="oaU-jI-FDQ" secondAttribute="top" id="p15-5I-HwZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="photoView" destination="tl4-N5-III" id="n7w-RH-Lf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQg-Kf-jsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="1207"/>
+        </scene>
     </scenes>
 </document>

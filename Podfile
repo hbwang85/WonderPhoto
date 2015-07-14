@@ -8,6 +8,7 @@ target 'WonderPhoto' do
   pod 'AFImageDownloader'
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod 'SVProgressHUD'
 
 end
 

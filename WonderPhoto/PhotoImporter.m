@@ -9,6 +9,7 @@
 #import "PXRequest.h"
 #import "RACSignal+Operations.h"
 #import "RACScheduler.h"
+#import "HTPhotoModel.h"
 #import "NSSet+RACSequenceAdditions.h"
 #import "RACSequence.h"
 #import "HTPhotoModel.h"
@@ -86,4 +87,22 @@
                                                      except:PXPhotoModelCategoryNude];
 }
 
++(NSURLRequest *)photoURLRequest:(HTPhotoModel *)photoModel {
+    return [[PXRequest apiHelper] urlRequestForPhotoID:photoModel.identifier.integerValue];
+}
+
++ (RACSignal *)fetchPhotoDetails:(HTPhotoModel *)model {
+    return [[[[[[NSURLConnection rac_sendAsynchronousRequest:[self photoURLRequest:model]] reduceEach:^id(NSURLResponse *response, NSData *data) {
+        return data;
+    }] map:^id(NSData *value) {
+        NSDictionary *results = [NSJSONSerialization JSONObjectWithData:value
+                                                                options:0
+                                                                  error:nil][@"photo"];
+        [self configurePhotoModel:model withDictionary:results];
+        [self downloadThumbnailForPhotoModel:model];
+
+        return model;
+    }] deliverOn:[RACScheduler mainThreadScheduler]] publish] autoconnect];
+
+}
 @end

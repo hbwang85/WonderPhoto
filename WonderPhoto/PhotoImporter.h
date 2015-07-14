@@ -6,8 +6,11 @@
 #import <Foundation/Foundation.h>
 
 @class RACSignal;
+@class HTPhotoModel;
 
 
 @interface PhotoImporter : NSObject
 + (RACSignal *)importPhotos;
+
++ (RACSignal *)fetchPhotoDetails:(HTPhotoModel *)model;
 @end
