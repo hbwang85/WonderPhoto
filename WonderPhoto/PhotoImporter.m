@@ -59,7 +59,7 @@
     }
 
     if (dictionary[@"comments_count"]) {
-        photoModel.fullsizedURL = [self urlForImageSize:4 inDictionary:dictionary[@"images"]];
+        photoModel.fullsizedURL = [self urlForImageSize:3 inDictionary:dictionary[@"images"]];
     }
 }
 
@@ -99,10 +99,15 @@
                                                                 options:0
                                                                   error:nil][@"photo"];
         [self configurePhotoModel:model withDictionary:results];
-        [self downloadThumbnailForPhotoModel:model];
+        [self downloadFullsizedImageForPhotoModel:model];
 
         return model;
     }] deliverOn:[RACScheduler mainThreadScheduler]] publish] autoconnect];
 
 }
+
++(void)downloadFullsizedImageForPhotoModel:(HTPhotoModel *)photoModel {
+    RAC(photoModel, fullsizedData) = [self download:photoModel.fullsizedURL];
+}
+
 @end

@@ -17,7 +17,6 @@
     self = [super init];
     if (self) {
         _model = photoModel;
-        __weak typeof(self) weakSelf = self;
         [self.didBecomeActiveSignal subscribeNext:^(id x) {
             [self downloadPhotoModelDetails];
         }];
@@ -25,7 +24,6 @@
         RAC(self, photoImage) = [RACObserve(self.model, fullsizedData) map:^id(id value) {
             return [UIImage imageWithData:value];
         }];
-
     }
 
     return self;
@@ -39,7 +37,7 @@
 - (void)downloadPhotoModelDetails {
     _loading = YES;
     [[PhotoImporter fetchPhotoDetails:self.model] subscribeError:^(NSError *error) {
-
+        NSLog(@"Error:%@ at %s", error.localizedDescription, __func__);
     } completed:^{
         _loading = NO;
     }];

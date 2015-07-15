@@ -10,8 +10,8 @@
 
 @interface HTPhotoViewController : UIViewController
 
-@property(nonatomic, readonly) NSInteger photoIndex;
-@property(nonatomic, readonly) HTPhotoViewModel *viewModel;
+@property(nonatomic, assign) NSInteger photoIndex;
+@property(nonatomic, strong) HTPhotoViewModel *viewModel;
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 
 @end

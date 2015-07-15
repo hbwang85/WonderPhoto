@@ -193,15 +193,28 @@
                         </connections>
                     </collectionView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="IM8-N7-qqh" kind="show" identifier="showPhotoAlbum" id="mJ2-c4-2ec"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdU-Me-Cln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="806" y="529"/>
         </scene>
+        <!--Photo Album View Controller-->
+        <scene sceneID="Yvx-Gh-CT8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IM8-N7-qqh" customClass="HTPhotoAlbumViewController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4es-aX-RNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="529"/>
+        </scene>
         <!--Photo View Controller-->
         <scene sceneID="YuK-Nk-TOL">
             <objects>
-                <viewController id="a9W-XB-aFp" customClass="HTPhotoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HTPhotoViewController" id="a9W-XB-aFp" customClass="HTPhotoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SV3-rf-hFE"/>
                         <viewControllerLayoutGuide type="bottom" id="kHc-2k-ynK"/>
@@ -212,6 +225,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-N5-III">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQg-Kf-jsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="1207"/>
+            <point key="canvasLocation" x="1618" y="535"/>
         </scene>
     </scenes>
 </document>

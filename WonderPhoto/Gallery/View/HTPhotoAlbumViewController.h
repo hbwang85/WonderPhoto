@@ -3,10 +3,15 @@
 // Copyright (c) 2015 Haibin Wang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@class HTPhotoAlbumViewModel;
 
 
-@interface HTPhotoAlbumViewController : NSObject
+@interface HTPhotoAlbumViewController : UIPageViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+
+
+@property(nonatomic, strong) HTPhotoAlbumViewModel *viewModel;
 
 
 

@@ -8,6 +8,10 @@
 #import "GalleryViewModel.h"
 #import "NSObject+RACPropertySubscribing.h"
 #import "RACSignal.h"
+#import "HTPhotoAlbumViewController.h"
+#import "HTPhotoAlbumViewModel.h"
+#import "HTPhotoModel.h"
+#import "SVProgressHUD.h"
 
 static NSString *const cellIdentifier = @"GalleryCellIdentifier";
 
@@ -30,14 +34,19 @@ static NSString *const cellIdentifier = @"GalleryCellIdentifier";
     __weak typeof(self) weakSelf = self;
     [RACObserve(self.viewModel, models) subscribeNext:^(id x) {
         [weakSelf.collectionView reloadData];
+        [SVProgressHUD dismiss];
     }];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [SVProgressHUD show];
 }
 
 #pragma mark - UICollectionViewDatasource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSLog(@"item count:%i", self.viewModel.models.count);
     return self.viewModel.models.count;
 }
 
@@ -53,6 +62,20 @@ static NSString *const cellIdentifier = @"GalleryCellIdentifier";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 //    [self collectionView:collectionView didDeselectItemAtIndexPath:indexPath];
+
+    [self performSegueWithIdentifier:@"showPhotoAlbum" sender:indexPath];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+
+    if ([segue.identifier isEqualToString:@"showPhotoAlbum"]) {
+        HTPhotoAlbumViewModel *viewModel = [[HTPhotoAlbumViewModel alloc] initWithPhotoArray:self.viewModel.models
+                                                                           initialPhotoIndex:((NSIndexPath *)sender).row];
+
+        HTPhotoAlbumViewController *controller = (HTPhotoAlbumViewController *)segue.destinationViewController;
+        controller.viewModel = viewModel;
+    }
 }
 
 

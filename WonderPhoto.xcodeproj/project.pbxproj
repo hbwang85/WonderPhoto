@@ -22,6 +22,7 @@
 		B7149804A0DBC221D4BAF1E8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149AB0DA88C586CE4F8E53 /* LoginViewController.m */; };
 		B71498AADBB64FE6E7DA33AD /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B714932D783F5C1591F1D126 /* GalleryViewController.m */; };
 		B71498C6028EDE145FF391F9 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7149F9130AB15201F2DB243 /* default.jpg */; };
+		B7149C744C7F3BF3094F8B16 /* HTPhotoAlbumViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149168D584921D62330C72 /* HTPhotoAlbumViewModel.m */; };
 		B7149CED9EB3B1356B9F4702 /* HTPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149A564C2CCA49C07529FB /* HTPhotoAlbumViewController.m */; };
 		B7149D7FD01DBD31C95019EB /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149FD5A2A2B4B0BD1CBEB0 /* LoginViewModel.m */; };
 		B7149E57FB37412E47BF7761 /* GalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7149D4C98C889AE05356CBE /* GalleryViewModel.m */; };
@@ -52,6 +53,7 @@
 		A300AF761B4BABC10071F5A3 /* WonderPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A300AF7B1B4BABC10071F5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A300AF7C1B4BABC10071F5A3 /* WonderPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WonderPhotoTests.m; sourceTree = "<group>"; };
+		B7149168D584921D62330C72 /* HTPhotoAlbumViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoAlbumViewModel.m; sourceTree = "<group>"; };
 		B714922A2FF007773584545E /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		B71493180307E5DCEA4408AA /* GalleryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewModel.h; sourceTree = "<group>"; };
 		B714932D783F5C1591F1D126 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		B71493B59ED1B830F42330CD /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		B71495B78E45A94209D9F1F7 /* HTPhotoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoViewModel.m; sourceTree = "<group>"; };
 		B71495E6A9D55F3E0410F981 /* HTPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoViewController.m; sourceTree = "<group>"; };
+		B714963D41231AA6EB3D4DC0 /* HTPhotoAlbumViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPhotoAlbumViewModel.h; sourceTree = "<group>"; };
 		B71496579C9F63C686548150 /* PhotoImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImporter.m; sourceTree = "<group>"; };
 		B714971A8E191FF148A7DE6F /* HTPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPhotoModel.m; sourceTree = "<group>"; };
 		B714977E0B6F64E8B3E5FF69 /* GalleryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCell.h; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				B71493180307E5DCEA4408AA /* GalleryViewModel.h */,
 				B71495B78E45A94209D9F1F7 /* HTPhotoViewModel.m */,
 				B71498418C68CEE236EC920B /* HTPhotoViewModel.h */,
+				B7149168D584921D62330C72 /* HTPhotoAlbumViewModel.m */,
+				B714963D41231AA6EB3D4DC0 /* HTPhotoAlbumViewModel.h */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				B71494C87983714259859419 /* HTPhotoViewModel.m in Sources */,
 				B7149CED9EB3B1356B9F4702 /* HTPhotoAlbumViewController.m in Sources */,
 				B7149F65AD420C143EA3B76C /* HTPhotoViewController.m in Sources */,
+				B7149C744C7F3BF3094F8B16 /* HTPhotoAlbumViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

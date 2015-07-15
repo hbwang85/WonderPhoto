@@ -18,7 +18,7 @@
 
     RAC(self.photoView, image) = RACObserve(self.viewModel, photoImage);
 
-    [RACObserve(self.viewModel, active) subscribeNext:^(NSNumber *x) {
+    [RACObserve(self.viewModel, loading) subscribeNext:^(NSNumber *x) {
         if (x.boolValue) {
             [SVProgressHUD show];
         } else {
